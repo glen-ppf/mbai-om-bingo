@@ -167,8 +167,7 @@ export default function WorkflowCanvas({
         <div ref={containerRef} className="relative w-full h-full overflow-hidden flex items-center justify-center">
             <div
                 style={{
-                    transform: `scale(${scale})`,
-                    transformOrigin: 'center center',
+                    zoom: scale,
                     width: `${layout.width}px`,
                     height: `${layout.height}px`,
                     position: 'relative',
