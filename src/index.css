@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+    --font-display: "Fredoka", sans-serif;
+    --font-body: "Nunito", sans-serif;
+    --color-brand-maroon: #7A003C;
+    --color-brand-maroon-light: #A6335F;
+    --color-brand-gold: #FDBF57;
+    --color-bg-cream: #FDF6F0;
+    --color-text-dark: #2D2028;
+    --color-text-muted: #7A6070;
+    --color-optimal: #10B981;
+    --color-wrong: #EF4444;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg-cream);
+    color: var(--color-text-dark);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-display {
+    font-family: var(--font-display);
+}
+
+.clay-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(122, 0, 60, 0.05), 0 2px 8px rgba(122, 0, 60, 0.02);
+}
+
+.clay-button {
+    border-radius: 9999px;
+    box-shadow: 0 4px 12px rgba(122, 0, 60, 0.15);
+    transition: all 0.2s ease;
+}
+
+.clay-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(122, 0, 60, 0.2);
+}
+
+.clay-button:active {
+    transform: scale(0.95);
+}
+
+/* Hide scrollbar for clean canvas */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(122, 0, 60, 0.1);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(122, 0, 60, 0.2);
+}
+
+/* 3D Transform Utilities */
+.perspective-1000 {
+    perspective: 1000px;
+}
+
+.preserve-3d {
+    transform-style: preserve-3d;
+}
+
+.backface-hidden {
+    backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+    transform: rotateY(180deg);
+}
